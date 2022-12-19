@@ -12,6 +12,7 @@ void main()
 {
     int temp, i, result2;
     int result[] = {0, 0, 0, 0, 0};
+    char Enter[100];
     char zundoko[100] = "結果：";
     printf("乱数取得中...15秒くらいかかります\n");
     for (i = 0; i < 5; i++)
@@ -27,6 +28,9 @@ void main()
     printf("%s\n", zundoko);
     if (result2 == 1){
         printf("きよし\n");
+        gets(Enter);
+    } else {
+        gets(Enter);
     }
 }
 
