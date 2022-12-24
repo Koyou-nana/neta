@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <Windows.h>
-// 作成者 小葉七夜
+
 char* zundoko2(int num, char* zundoko);
 
 int result3(int* num);
@@ -21,10 +21,9 @@ void main()
         temp = rand()%2;
         result[i] = temp;
         zundoko2(temp, zundoko);
-        printf("%d%% 完了\n",i * 20);
+        printf("%d%% 完了\n",i * 20 + 20);
         Sleep(1000);
     }
-    printf("100%% 完了\n");
     result2 = result3(result);
     printf("%s\n", zundoko);
     if (result2 == 5){
